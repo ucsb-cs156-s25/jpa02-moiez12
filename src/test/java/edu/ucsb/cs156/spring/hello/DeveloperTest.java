@@ -47,7 +47,43 @@ public class DeveloperTest {
         assertTrue(t.getMembers().contains("Joel S."), "Team should contain Joel S.");
     }
 
-    // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
+    @Test
+        public void getTeam_returns_team_with_JasonZ() {
+            Team t = Developer.getTeam();
+            assertTrue(t.getMembers().contains("Jason Z."), "Team should contain Jason Z.");
+        }
+
+        @Test
+        public void getTeam_returns_team_with_FredZ() {
+            Team t = Developer.getTeam();
+            assertTrue(t.getMembers().contains("Fred Z."), "Team should contain Fred Z.");
+        }
+
+        @Test
+        public void getTeam_returns_team_with_AndrewK() {
+            Team t = Developer.getTeam();
+            assertTrue(t.getMembers().contains("Andrew K."), "Team should contain Andrew K.");
+        }
+
+        @Test
+        public void getTeam_returns_team_with_RubenA() {
+            Team t = Developer.getTeam();
+            assertTrue(t.getMembers().contains("Ruben A."), "Team should contain Ruben A.");
+        }
+
+        @Test
+        public void getTeam_returns_team_with_MoiezB() {
+            Team t = Developer.getTeam();
+            assertTrue(t.getMembers().contains("Moiez B."), "Team should contain Moiez B.");
+        }
+
+        @Test
+        public void getTeam_returns_team_with_JoelS() {
+            Team t = Developer.getTeam();
+            assertTrue(t.getMembers().contains("Joel S."), "Team should contain Joel S.");
+        }
+
+            // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
     // 100% mutation coverage (all mutants timed out or killed)
 
 }
